@@ -1,0 +1,651 @@
+@charset "utf-8";
+
+/*공통*/
+
+.setionTxt {
+    position: absolute;
+    left: 130px;
+    top: 50%;
+    margin-top: -86px;
+}
+.setionTxt .page {
+    font-size: 34px;
+    font-weight: 500;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+.setionTxt .ver{
+     font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.setionTxt p {font-size: 24px;}
+.setionTxt span {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+    font-family: 'NotoSans';
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.setionTxt span:hover a {
+    color: #fff;
+}
+.setionTxt span:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: '';
+    height: calc(100% - 22px);
+    width: calc(100% - 22px);
+    border: 2px solid #333;
+    transform: rotate(45deg);
+    border-radius: 6px;
+    transition:background 0.2s;
+    z-index: -1;  
+}
+.setionTxt span:hover::after{
+    background:#333;
+    color: #fff;
+}
+.popupBg {
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin-top: -485px;
+}
+/*
+.popup {
+    width: 100%;
+    height: 100%;
+    position: relative;  
+}
+*/
+.popup img{
+    height: 1080px;
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    margin-top: -485px;
+    left: 50%;
+    margin-left: -542px;
+    overflow: hidden;
+}
+.popupTxt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -340px;
+}
+.popupTxt li {margin-bottom: 30px;}
+.popupTxt li:nth-child(3) span {
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'NotoSans',sans-serif;
+}
+.popupTxt .popupTit{
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+.popupTxt p{
+    font-size: 30px;
+    font-weight: 700;
+}
+.popupTxt span {
+    font-size: 20px;
+    font-weight: 500;
+}
+.mobileMockup h2 {
+    font-size: 150px;
+}
+
+/*main*/
+
+.main,.jomalone,.inspiration,.gentlemonster,.gmz,.police,.benz,.last {
+    font-family: 'PlayfairDisplay';
+    text-align: center;
+    margin: 0 auto;
+}
+.main .dia {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(90deg);
+}
+.sq {
+    height: 1000px;
+    width: 1000px;
+}
+.sq_2 {
+    height: 1500px;
+    width: 1500px;
+}
+.sq_3 {
+    height: 1500px;
+    width: 1500px;
+}
+.sq:after,.sq_2:after,.sq_3:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: '';
+    height: calc(100% - 22px);
+    /* -22px is 2 * 10px gap on either side - 2px border on either side */
+    width: calc(100% - 22px);
+    /* -22px is 2 * 10px gap on either side - 2px border on either side */
+    border: 3px solid #333;
+    transform: rotateX(-45deg) rotateZ(-45deg);
+    border-radius: 50px 50px;
+}
+.main .year {
+    width: 110px;
+    height: 60px;
+    line-height: 54px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    font-size: 26px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.main h1 {font-size: 72px;}
+
+
+/*profile*/
+
+.profile {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    font-family: 'PlayfairDisplay';
+    font-size: 24px;
+}
+.pro_txt {
+    position: absolute;
+    left: 220px;
+    bottom: 160px;
+    font-size: 80px;
+}
+ .profile p {
+     position: absolute;
+    font-size: 280px;
+    font-weight: 700;
+}
+.L {
+    left: 300px;
+    top: 200px;
+    animation: LEE 1.4s infinite ease-in-out alternate;
+}
+.E {
+    left: 750px;
+    bottom: -100px;
+    animation: YEON 1.4s infinite ease-in-out alternate;
+}
+.E_1 {
+    right: 280px;
+    top: 0px;
+    animation: JAE 1.4s infinite ease-in-out alternate;
+}
+.designer {
+    position: absolute;
+    left: 220px;
+    top: 180px;
+}
+
+@keyframes LEE{
+    0%{
+    margin-top: 30px;
+    }100%{
+    margin-bottom: 30px;
+    }
+}
+@keyframes YEON{
+    0%{
+    margin-bottom: 50px;
+    }100%{
+    margin-top: 50px;
+    }
+}
+@keyframes JAE{
+    0%{
+    margin-top: 30px;
+    }100%{
+    margin-bottom: 30px;
+    }
+}
+.pro_Info {
+    position: absolute;
+    right: 300px;
+    bottom: 120px;
+}
+.pro_Info ul {
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.pro_Info ul li{
+    font-family: 'NotoSans';
+    font-weight: 300;
+    font-size: 24px;
+    margin-top: 5px;
+}
+.pro_Info ul li:first-child {margin-top: 10px;}
+
+
+/*jomalone*/
+
+.jomalone {
+    font-size: 24px;
+    position: relative;
+    overflow: hidden;
+    height: auto;
+}
+.jomalone .setionTxt {
+    position: absolute;
+    left: 130px;
+    top: 50%;
+    margin-top: -178px;
+}
+.mobile{
+    margin-left: 400px;
+    position: relative;
+    top: 20px;
+}
+.mobileMockup {float:left;}
+.mobileMockup img {width: 360px;}
+.mobileImg {
+    width:1160px;
+    float: right;
+    top: 50px;
+}
+.mobileImg img {width: 320px;}
+.slick-dots{
+    width:100%;
+    position:absolute;
+    text-align:right;
+}
+.slick-dots li{display:inline-block;}
+.slick-dots .slick-active button{background:#8e8e8e;}
+.slick-dots button{
+    border:0;
+    padding:0;
+    text-indent:-9999px;
+    width:290px;
+    height:3px;
+    outline:none;
+    cursor:pointer;
+    margin-top:30px;
+}
+
+
+/*inspiration*/
+
+.inspiration {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.inspiration .popupTxt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -293px;
+}
+.inspiration .popupTit h2 {font-size: 120px;}
+.inspiration .setionTxt {
+    position: absolute;
+    left: auto;
+    top: 50%;
+    margin-top: -10px;
+    right: 145px;
+}
+.inspiration .inBox img {
+    transform: rotate(24deg);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+.inBox {
+    position: absolute;
+    top: 900px;
+    left: -1500px;
+}
+.inImg01 {
+    position: absolute;
+    top: 150px;
+    left: 650px;
+}
+.inImg02 {
+    position: absolute;
+    top: 720px;
+    left: 400px;
+}
+.inImg03 {
+    position: absolute;
+    top: 150px;
+    left: -300px;
+}
+.panel {
+    position: absolute;
+    top: 40%;
+    right: 185px;
+}
+.panel .panelLine {margin: 6px 0;}
+.panel a::before,.panel .panelLine,.panel a::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #333;
+    text-indent: -9999px;
+}
+.panel .panelLine {
+    margin-left: 10px;
+    animation: burger 1.5s infinite ease-in-out alternate;
+}
+.panel a::before,.panel a::after {
+    animation: burger-hover 1.5s infinite ease-in-out alternate;
+}
+
+@keyframes burger-hover{
+    0%{
+    margin-left: 5px;
+    }50% {
+      margin-right: 15px; 
+    }100%{
+        margin-left: 5px;
+    }
+}
+@keyframes burger{
+    0%{
+    margin-right: 10px;
+    }50% {
+      margin-left: 0px; 
+    }100%{
+        margin-right: 10px;
+    }
+}
+.panelMenu {
+    width: 214px;
+    height: 370px;
+    background: url(../images/panelMenu.jpg) no-repeat;
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    z-index: 9;
+}
+.inspiration .panelMenu ul {
+   margin-top: 50%;
+}
+.panelMenu ul li {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    color: #333;
+    cursor: pointer;
+}
+
+
+/*gentlemonster*/
+
+.gentlemonster {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+.gentlemonster .popupTxt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -320px;
+}
+.gentlemonster .popupTit h2 {
+    font-size: 130px;
+    line-height: 100px;
+    margin-bottom: 70px;
+}
+.gentlemonster .setionTxt {
+    position: absolute;
+    left: auto;
+    top: 50%;
+    margin-top: -10px;
+    left: 145px;
+}
+.gentleBox {
+    position: relative;
+    right: -800px;
+    bottom: -1400px;
+}
+.gentlemonster .gentleBox img {
+    transform: rotate(-24deg);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    width: 680px;
+}
+.gentleImg01 {
+    position: absolute;
+    bottom: -200px;
+    left: 420px;
+}
+.gentleImg02 {
+    position: absolute;
+    bottom: -680px;
+    left: 630px;
+}
+.gentleImg03 {
+    position: absolute;
+    bottom: -180px;
+    right: 20px;
+}
+.gentleImg04 {
+    position: absolute;
+    bottom: -660px;
+    right: -190px;
+}
+.gentlemonster .panel {
+    position: absolute;
+    top: 40%;
+    left: 185px;
+}
+.gentlemonster .panelMenu {
+    width: 214px;
+    height: 370px;
+    background: url(../images/panelMenu.jpg) no-repeat;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    z-index: 9;
+}
+.panelMenu ul {
+   margin-top: 65%;
+}
+.panelMenu ul li {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    left: 0;
+    color: #333;
+}
+
+
+/*gmz*/
+
+.gmz {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+.gmz .popupTxt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -290px;
+}
+.gmz .popupTit h2 {
+    font-size: 150px;
+    line-height: 100px;
+    margin-bottom: 120px;
+}
+.gmz .popupTxt p {margin-bottom: 10px;}
+.gmz .setionTxt {
+    position: absolute;
+    left: auto;
+    top: 50%;
+    margin-top: -150px;
+    right: 130px;
+}
+.gmz .gmzBox img {
+    transform: rotate(24deg);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+.gmzBox {
+    position: relative;
+    top: 900px;
+    left: -1500px;
+}
+.gmzImg01 {
+    position: absolute;
+    top: -300px;
+    right: 480px;
+}
+.gmzImg02 {
+    position: absolute;
+    top: 80px;
+    left: 0px;
+}
+
+
+/*police*/
+
+.police {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+.police .popupTxt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -300px;
+}
+.police .popupTit h2 {
+    font-size: 100px;
+    line-height: 100px;
+    margin-bottom: 70px;
+}
+.police .popupTxt p {margin-bottom: 10px;}
+.police .setionTxt {
+    position: absolute;
+    left: auto;
+    top: 50%;
+    margin-top: -150px;
+    left: 130px;
+}
+.police .policeBox img {
+    transform: rotate(-20deg);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+.policeBox {
+    position: relative;
+    top: 900px;
+    right: -1500px;
+}
+.policeImg01 {
+    position: absolute;
+    top: -260px;
+    right: 680px;
+}
+.policeImg02 {
+    position: absolute;
+    top: 290px;
+    left: 690px;
+}
+.policeImg03 {
+    position: absolute;
+    top: -280px;
+    right: -250px;
+}
+
+
+/*Mercedes_benz*/
+
+.benz {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+}
+.benz .popupTxt {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -300px;
+}
+.benz .popupTit h2 {
+    font-size: 120px;
+    line-height: 100px;
+    margin-bottom: 100px;
+}
+.benz .popupTxt p {margin-bottom: 10px;}
+.benz .setionTxt {
+    position: absolute;
+    left: auto;
+    top: 50%;
+    margin-top: -150px;
+    right: 130px;
+}
+.benz .benzBox img {
+    transform: rotate(20deg);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+.benzBox {
+    position: relative;
+    top: 900px;
+    left: -1500px;
+}
+.benzImg01 {
+    position: absolute;
+    top: -310px;
+    right: 440px;
+}
+.benzImg02 {
+    position: absolute;
+    top: -290px;
+    left: -230px;
+}
+.benzImg03 {
+    position: absolute;
+    top: 260px;
+    left: 480px;
+}
+
+/*last*/
+
+.last h1{font-size: 100px;}
+.last p{
+    font-size: 20px;
+    margin-top: 40px;
+    font-weight: 500;
+}

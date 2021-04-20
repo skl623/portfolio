@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+#header {
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1;
+}
+
+#header h1 {float: left;}
+
+.gnb {
+    font-family: 'PlayfairDisplay';
+    font-size: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    float: right;
+    height: 62px;
+    line-height: 62px;   
+}
+
+.gnb li {
+    float: left;
+    margin-left: 50px;
+}
+
+.gnb li a {
+    color: #333;
+    text-decoration: none;    
+}
+
+.gnb .gnbTit {
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 50%;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: 12px;
+    position: absolute;
+    left: 100px;
+    margin-left: 0; 
+}
