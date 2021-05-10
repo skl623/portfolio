@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
-
+ 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+
     <title>portfolio</title>
     <link rel="stylesheet" href="css/fullpage.min.css" type="text/css">
     <link rel="stylesheet" href="css/slick.css" type="text/css">
     <link rel="stylesheet" href="css/default.css" type="text/css">
     <link rel="stylesheet" href="css/include.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
     <link rel="stylesheet" href="fonts/fonts.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.0/css/all.css">
 
@@ -21,8 +24,25 @@
 <body>
     <!--헤더-->
     <header id="header">
+        <!--m패널-->
+        <div class="mPanel">
+            <a href="#"><span>패널아이콘</span></a>
+        </div>
+        <!--m패널-->
+
+
+        <!--모바일메뉴-->
+        <div class="gnbBg">
+            <!--m패널-->
+            <div class="mClose">
+                <a href="#"><i class="fas fa-times"></i></a>
+            </div>
+            <!--m패널-->
+        </div>
+        <!--모바일메뉴-->
+
         <ul class="gnb">
-           <li class="gnbTit">타이틀</li>
+            <li class="gnbTit"></li>
             <li data-menuanchor="page01" class="active"><a href="#page01">Jomalone</a></li>
             <li data-menuanchor="page02"><a href="#page02">Inspiration</a></li>
             <li data-menuanchor="page03"><a href="#page03">Gentle monster</a></li>
@@ -30,6 +50,17 @@
             <li data-menuanchor="page05"><a href="#page05">police station</a></li>
             <li data-menuanchor="page06"><a href="#page06">Mercedes benz</a></li>
         </ul>
+
+        <ul class="mGnb">
+            <li data-menuanchor="page01" class="active"><a href="#page01">Jomalone</a></li>
+            <li data-menuanchor="page02"><a href="#page02">Inspiration</a></li>
+            <li data-menuanchor="page03"><a href="#page03">Gentle monster</a></li>
+            <li data-menuanchor="page04"><a href="#page04">Gmz</a></li>
+            <li data-menuanchor="page05"><a href="#page05">police station</a></li>
+            <li data-menuanchor="page06"><a href="#page06">Mercedes benz</a></li>
+        </ul>
+        <div class="mGnbTit"></div>
+
     </header>
     <!--헤더-->
 
@@ -48,17 +79,19 @@
 
         <!--프로필-->
         <div class="section profile">
+            <div class="designer">
+                <img src="images/designer.png" alt="">
+            </div>
             <!--pro_txt-->
             <div class="pro_txt">
                 <h4>YEON<br>JAE</h4>
-
+            </div>
+            <div class="mobile_pro_txt">
+                <h4>Lee Yeon Jae</h4>
             </div>
             <p class="L">L</p>
             <p class="E">E</p>
             <p class="E_1">E</p>
-            <div class="designer">
-                <img src="images/designer.png" alt="">
-            </div>
             <!--pro_txt-->
 
             <!--pro_Info-->
@@ -74,6 +107,7 @@
                     <li>2017 . 08 신라대학교 귀금속주얼리디자인 전공 졸업</li>
                     <li>2019 . 04 NCS기반 웹디자인 교육과정 이수</li>
                     <li>2019 . 10 ~ 2020 . 11 미즈스토리 입사 및 퇴사</li>
+                    <li>2021 . 01 ~ 2021 . 05 반응형웹제작실무(프론트엔드) 이</li>
                 </ul>
             </div>
             <!--pro_Info-->
@@ -115,7 +149,7 @@
 
             <!--jomaloneTxt-->
             <div class="setionTxt">
-            
+
                 <p class="ver">website</p>
                 <p>MORE</p>
                 <span><a href="#">←</a></span>
@@ -137,6 +171,16 @@
                 </div>
             </div>
             <!--mobileImg-->
+
+            <!--mobileVer.-->
+            <div class="mVerImg">
+                <img src="images/m/moJoImg.png" alt="">
+                <div class="mPage">
+                    <p>mobile</p>
+                    <span><a href="http://skl623.github.io/jomalone/">main</a></span>
+                </div>
+            </div>
+            <!--mobileVer.-->
         </div>
         <!--jomalone-->
 
@@ -207,6 +251,20 @@
                 <div class="inImg03"><img src="images/con03Img03.jpg" alt=""></div>
             </div>
             <!--InspirationImg-->
+            <!--mobileVer.-->
+            <div class="mPage">
+                <p>website</p>
+                <span>
+                    <a href="http://skl623.dothome.co.kr/inspiration/html/index.html">main</a>
+                </span>
+                <span>
+                    <a href="http://skl623.dothome.co.kr/inspiration/html/side.html">sub</a>
+                </span>
+                <span>
+                    <a href="http://skl623.dothome.co.kr/inspiration/html/detail.html">detail</a>
+                </span>
+            </div>
+            <!--mobileVer.-->
 
         </div>
         <!--Inspiration-->
@@ -278,6 +336,17 @@
                 <div class="gentleImg04"><img src="images/con04Img04.jpg" alt=""></div>
             </div>
             <!--gentlemonsterImg-->
+            <!--mobileVer.-->
+            <div class="mPage">
+                <p>website</p>
+                <span>
+                    <a href="http://skl623.dothome.co.kr/gentlemonster/index.html">main</a>
+                </span>
+                <span>
+                    <a href="http://skl623.dothome.co.kr/gentlemonster/story.html">sub</a>
+                </span>
+            </div>
+            <!--mobileVer.-->
         </div>
         <!--gentlemonster-->
 
@@ -327,6 +396,14 @@
                 <div class="gmzImg02"><img src="images/con05Img02.jpg" alt=""></div>
             </div>
             <!--gmzImg-->
+            <!--mobileVer.-->
+            <div class="mPage">
+                <p>website</p>
+                <span>
+                    <a href="http://skl623.dothome.co.kr/gmz/index.html">main</a>
+                </span>
+            </div>
+            <!--mobileVer.-->
         </div>
         <!--gmz-->
 
@@ -379,6 +456,14 @@
                 <div class="policeImg03"><img src="images/con06Img03.jpg" alt=""></div>
             </div>
             <!--policeImg-->
+            <!--mobileVer.-->
+            <div class="mPage">
+                <p>website</p>
+                <span>
+                    <a href="http://skl623.dothome.co.kr/police/index.html">main</a>
+                </span>
+            </div>
+            <!--mobileVer.-->
         </div>
         <!--police-->
 
@@ -429,16 +514,25 @@
                 <div class="benzImg03"><img src="images/con07Img03.jpg" alt=""></div>
             </div>
             <!--benzImg-->
+            <!--mobileVer.-->
+            <div class="mPage">
+                <p>website</p>
+                <span>
+                    <a href="http://skl623.dothome.co.kr/benz/index.html">main</a>
+                </span>
+            </div>
+            <!--mobileVer.-->
         </div>
         <!--Mercedes_benz-->
 
         <!--last-->
         <div class="section last">
             <h1>Thank you</h1>
-            <p>H. 010 4849 5061</p>
+            <a href="tel:010-4849-5061"><p>H. 010 4849 5061</p></a>
+            
         </div>
         <!--last-->
-        
+
         <!--<div class="section fp-auto-height">copyright</div>-->
         <!--fp-auto-height 자동 푸터영역 잡아줌-->
     </div>
